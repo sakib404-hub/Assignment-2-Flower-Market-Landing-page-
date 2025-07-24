@@ -27,8 +27,31 @@ body{
 .dark-1{
     color: #8987A1;
 }
+.dark-2{
+   color:  rgba(0, 0, 0, 0.5);
+}
 .primary-clr{
     color: #E95A08;
+}
+.center{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    padding: 10px 16px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+}
+.btn-primary:hover{
+    background-color: #e95a08c9;
+    transform: scale(1.05);
+    border: 2px solid rgba(0, 0, 0, 0.226);
+    transition: 0.5s all ease;
 }
 /* Header Section Styling  */
 nav{
@@ -75,6 +98,39 @@ nav .header-content ul li{
 .banner-image{
     position: relative;
     bottom: -4px;
+    /* border: 2px solid black; */
+}
+
+/* Section Our Plants  */
+.our-plants{
+    max-width: 1140px;
+    border: 2px solid black;
+    margin: 120px auto 200px;
+    background-color: white;
+}
+.our-plants-content-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.our-plants-content-description{
+    max-width: 880px;
+    margin: 10px auto 30px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+.card{
+    /* border: 2px solid black; */
+    max-width: 265px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px 10px;
+    /* background-color: aliceblue; */
 }
 
 
@@ -86,5 +142,9 @@ nav .header-content ul li{
     .banner{
         flex-direction: column-reverse;
         gap: 20px;
+        justify-content: flex-start;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
