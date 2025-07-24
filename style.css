@@ -1,0 +1,45 @@
+/* Fonts   noto serif & inter*/
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared Styling  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dark-1{
+    color: #8987A1;
+}
+/* Header Section Styling  */
+nav{
+    max-width: 1140px;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto 120px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .header-content ul{
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+nav .header-content ul li{
+    list-style: none;
+}
