@@ -22,9 +22,6 @@
      padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: white;
-}
 .dark-1{
     color: #8987A1;
 }
@@ -64,7 +61,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.055);
     background-color: white;
 }
 nav .header-content ul{
@@ -83,7 +80,7 @@ nav .header-content ul li{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
     background-color: white;
 }
 .banner-content{
@@ -147,7 +144,7 @@ nav .header-content ul li{
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267); */
 }
 .plant-lover-content{
     padding: 10px 20px;
@@ -357,7 +354,7 @@ footer{
    .plant-lover{
     flex-direction: column;
    }
-   .plant-lover-content-title, .banner-content-title, .our-plants-content-title{
+   .plant-lover-content-title, .banner-content-title, .our-plants-content-title, .latest-deal-title{
     font-size: 24px;
    }
    .inter{
@@ -401,6 +398,16 @@ footer{
     flex-direction: column;
     gap: 20px;
     padding: 30px 20px;
+   }
+   .latest-deal{
+    margin-bottom: 50px;
+   }
+   .box-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
+   .latest-deal-description{
+    max-width: 330px;
    }
 }
 @media screen and (min-width: 577px) and (max-width: 992px){
