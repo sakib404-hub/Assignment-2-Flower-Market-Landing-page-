@@ -28,7 +28,7 @@
 nav{
     max-width: 1140px;
     height: auto;
-    padding: 10px;
+    padding: 10px 32px;
     margin: 0 auto 120px;
     border: 2px solid black;
     display: flex;
@@ -42,4 +42,11 @@ nav .header-content ul{
 }
 nav .header-content ul li{
     list-style: none;
+}
+
+/* making it responsive  */
+@media screen and (max-width:576px) {
+    nav .header-content ul li:not(:last-child){
+        display: none;
+    }
 }
