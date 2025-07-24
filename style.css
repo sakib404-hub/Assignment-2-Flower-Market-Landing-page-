@@ -187,6 +187,122 @@ nav .header-content ul li{
     font-size: 22px;
     margin: 10px auto 0;
 }
+
+/* Section offer  */
+.box-container{
+    max-width: 1140px;
+    margin: 130px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    /* border: 2px solid black; */
+    gap: 20px;
+}
+.box{
+    width: 100%;
+    min-height: 200px;
+    /* border: 2px solid tomato; */
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 2px solid aqua; */
+}
+.box-content{
+    border-radius: 10px;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-content-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.shop{
+    color: white;
+    font-size: 16px;
+    font-weight: 500px;
+}
+.bloom{
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url(photos/deal-bloom.png);
+}
+.ana{
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(photos/deal-ana.png);
+}
+.zebo{
+    background-image: url(photos/deal-zabo.png);
+}
+#bx{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+#title{
+    font-size: 40px;
+    font-weight: bold;
+}
+#shop{
+    font-size: 28px;
+    color: white;
+}
+
+/* join Section  */
+.join{
+    height: 530px;
+    width: 100%;
+    background-image: url("photos/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.join-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.join-content-title{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.input-des{
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+}
+.email{
+    width: 75%;
+    border: none;
+    padding: 10px 32px;
+}
+.btn-subscribe{
+    width: 25%;
+    border: none;
+    padding: 10px 32px;
+    background-color: #E95A08;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    min-height: 350px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+}
 /* making it responsive  */
 @media screen and (max-width:576px) {
     nav .header-content ul li:not(:last-child){
@@ -214,6 +330,38 @@ nav .header-content ul li{
    }
    .trusted-badge{
     display: none;
+   }
+   .box-container{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .box{
+    width: 95%;
+    /* border: 2px solid yellow; */
+   }
+   .box-content{
+    min-height: 100%;
+    min-width: 100%;
+   }
+   .input-des{
+    width: 80%;
+   }
+   .email{
+    width: 70%;
+   }
+   .btn-subscribe{
+    width: 30%;
+   }
+   .join-content-title, #title{
+    font-size: 20px;
+   }
+   #shop{
+    font-size: 16px;
    }
 }
 @media screen and (min-width: 577px) and (max-width: 992px){
