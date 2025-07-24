@@ -13,12 +13,13 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 22px;
 }
 
 /* Shared Styling  */
 *{
     margin: 0;
-    padding: 0;
+     padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -104,7 +105,7 @@ nav .header-content ul li{
 /* Section Our Plants  */
 .our-plants{
     max-width: 1140px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 120px auto 200px;
     background-color: white;
 }
@@ -133,6 +134,46 @@ nav .header-content ul li{
     /* background-color: aliceblue; */
 }
 
+.plant-lover{
+    max-width: 1140px;
+    height: auto;
+    /* border: 2px solid black; */
+    margin: 200px auto 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+}
+.plant-lover-content{
+    padding: 10px 20px;
+    max-width: 540px;
+    /* border: 2px solid black; */
+}
+.plant-lover-image{
+    position: relative;
+}
+.plant-lover-content-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.plant-lover-content ul{
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.marketer{
+    width: 100%;
+}
+.trusted-badge {
+  width: 270px;  
+  position: absolute;
+  top: -120px;    
+  right: -70px;   
+  z-index: 10;
+}
 
 /* making it responsive  */
 @media screen and (max-width:576px) {
@@ -147,4 +188,40 @@ nav .header-content ul li{
     .card-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .card{
+    max-width: 200px;
+   }
+   .plant-lover{
+    flex-direction: column;
+   }
+   .plant-lover-content-title{
+    font-size: 24px;
+   }
+   .inter{
+    font-size: 14px;
+   }
+}
+@media screen and (min-width: 577px) and (max-width: 992px){
+   .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .plant-lover{
+    flex-direction: column;
+   }
+   .plant-lover-content-title{
+    font-size: 36px;
+   }
+   .inter{
+    font-size: 16px;
+   }
+   .plant-lover-content ul{
+    max-width: 100%;
+}
+
+
 }
