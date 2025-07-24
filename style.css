@@ -21,8 +21,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: aliceblue;
+}
 .dark-1{
     color: #8987A1;
+}
+.primary-clr{
+    color: #E95A08;
 }
 /* Header Section Styling  */
 nav{
@@ -30,10 +36,12 @@ nav{
     height: auto;
     padding: 10px 32px;
     margin: 0 auto 120px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    background-color: white;
 }
 nav .header-content ul{
     display: flex;
@@ -43,10 +51,40 @@ nav .header-content ul{
 nav .header-content ul li{
     list-style: none;
 }
+/* Banner  */
+.banner{
+    max-width: 1140px;
+    /* border: 2px solid black; */
+    margin: 120px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.295);
+    background-color: white;
+}
+.banner-content{
+    max-width: 550px;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+.banner-content-title{
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.banner-image{
+    position: relative;
+    bottom: -4px;
+}
+
 
 /* making it responsive  */
 @media screen and (max-width:576px) {
     nav .header-content ul li:not(:last-child){
         display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 }
