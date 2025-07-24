@@ -174,7 +174,19 @@ nav .header-content ul li{
   right: -70px;   
   z-index: 10;
 }
-
+.latest-deal{
+    width: 100%;
+    margin: 130px auto;
+}
+.latest-deal-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+.latest-deal-description{
+    max-width: 850px;
+    font-size: 22px;
+    margin: 10px auto 0;
+}
 /* making it responsive  */
 @media screen and (max-width:576px) {
     nav .header-content ul li:not(:last-child){
@@ -199,6 +211,9 @@ nav .header-content ul li{
    }
    .inter{
     font-size: 14px;
+   }
+   .trusted-badge{
+    display: none;
    }
 }
 @media screen and (min-width: 577px) and (max-width: 992px){
